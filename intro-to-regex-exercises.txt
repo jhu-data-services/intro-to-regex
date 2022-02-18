@@ -158,6 +158,7 @@ solution:
 
 
 Ex. 10: It's Raining Cats and Dogs
+----------------------------------
 
 Find all instances of cat and dog
 
@@ -195,6 +196,7 @@ solution:
 
 
 Ex. 12: The Name Game
+---------------------
 
 Atwood, Margaret
 Bradbury, Ray
