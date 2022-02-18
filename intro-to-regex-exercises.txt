@@ -1,0 +1,267 @@
+Ex. 1: The Wild Thornberrys
+
+Match all the Thornberrys!
+------------------
+
+Thornberry
+thornberry
++hornberry
+
+concepts: .
+solution:
+
+
+Ex. 2: Call Me, Beep Me
+-----------------------
+Match the valid phone numbers
+
+874-fff-fgf5
+35245
+70125
+353-693-1485
+ff5733
+759.13
+429-268-9853
+455-456
+90210
+9234-43556-5
+429-268-9853
+
+concepts: \d, {n}
+solution:
+
+
+Ex. 3: The Green Giant
+------------------
+
+Match only vegetables
+
+Hint: What's different between the fruit and veg?
+
+banana
+apple
+kiwi
+zucchini
+asparagus
+cauliflower
+
+concepts: \w, {min,max}
+solution:
+
+
+Ex. 4: Teen Spirit
+------------------
+
+Match everything but tune and teen
+
+spoon
+moon
+teen
+boon
+oboe
+tune
+gloomy
+zoom
+tone
+
+concepts: \w, +
+solution:
+
+
+Ex. 5: Mind the Gap
+-------------------
+
+Match the British spelling (contains ou, rather than o):
+
+neighbor
+labor
+flavour
+humour
+labour
+flavor
+neighbour
+humor
+out
+
+concepts: \w, +
+solution:
+
+
+Ex. 6: Mr. Rogers
+-------------------
+
+Match both spellings of neighbor
+
+neighbor
+labor
+flavour
+humour
+labour
+flavor
+neighbour
+humor
+
+concepts: \w, +, ?
+solution:
+
+
+Ex. 7: The Wild Thornberrys Redux
+
+Match all the Thornberrys!
+------------------
+
+Eliza Thornberry
+Nigel Thornberry
+Donnie Thornberry
+Debbie Thornberry
+Darwin Thornberry
+
+concepts: \w, +, \s
+solution:
+
+
+Ex. 8: Out of Tune
+-------------
+
+Match everything but tune
+
+spoon
+moon
+teen
+boon
+oboe
+tune
+gloomy
+zoom
+tone
+
+concepts: \w, +, []
+solution:
+
+
+Ex. 9: Freedom Fries
+-------------------
+
+Match the American spelling (contains o, rather than ou):
+
+neighbor
+labor
+flavour
+humour
+labour
+flavor
+neighbour
+humor
+
+concepts: \w, +, [], ^
+solution:
+
+
+Ex. 10: It's Raining Cats and Dogs
+
+Find all instances of cat and dog
+
+“One cat just leads to another.” – Ernest Hemingway.
+“Cats rule the world.” – Jim Davis.
+“I am fond of pigs. Dogs look up to us. Cats look down on us.
+Pigs treat us as equals.” – Winston Churchill.
+“Time spent with cats is never wasted.” – Sigmund Freud.
+“How we behave toward cats here below determines
+our status in heaven.” – Robert A. Heinlein.
+“Dogs are our link to paradise.
+They don’t know evil or jealousy or discontent.
+To sit with a dog on a hillside on a glorious afternoon
+is to be back in Eden, where doing nothing was not boring —
+it was peace.” – Milan Kundera.
+
+concepts: [], ?, |
+solution:
+
+
+Ex. 11: File Frenzy
+------------------
+
+Find files with the PDF Extension
+
+file1.pdf
+README.md
+imagefile.png
+file2.pdf
+notapdf.pdf.txt
+pdf.png
+
+concepts: \w, +, $
+solution:
+
+
+Ex. 12: The Name Game
+
+Atwood, Margaret
+Bradbury, Ray
+Jemisin, N.K.
+Vonnegut, Kurt
+
+concepts: \w, +, \s
+solution:
+
+
+Ex. 13: Tutti Fruity
+------------------
+
+Match only the fruit
+
+Hint: What's different between the fruit and veg?
+
+banana
+apple
+kiwi
+zucchini
+asparagus
+cauliflower
+
+concepts: \w, {min,max}, \b
+solution:
+
+
+Ex. 14: The Truth is Out There
+-----------------------
+
+Find all the valid phone numbers
+
+city,state,country,contact,shape,duration (hours/min),comments,date posted
+frisco,nc,us,919-745-2322,unknown,30 minutes,A friend and myself were standing on the shore of the Pamlico sound as we observed 4 objects moving in up and down motions for about 30,1/28/1999
+harrisburg,pa,us,(717) 343 3412,triangle,10 minutes,We observed 3 triangular shaped high speed objects&#33,5/9/2003
+panama city,fl,us,850.923.6198,formation,1 hour(?),During a road trip to Panama City a friend and I witnessed a pair of luminous light formations appear and dissappear over the Gulf.,1/28/1999
+stafford,tx,us,281.359.6795,unknown,10 seconds,A man emerges from a beam of light that shines on a grassy field at night and he runs towards the Texas Instruments parking lot.,4/18/2012
+seymour,tn,us,865/359/4355,cigar,1min. 39s,Stationary Elongated UFO 200ft above vacant field with city lights on bottom,10/31/2008
+weatherford,tx,us,817 403 2845,unknown,30 seconds,Black or dark grey.  Too big&#44 too low&#44 too slow&#44 too quiet&#44 for a normal aircraft.,9/2/2005
+peoria,il,us,309.439.1867,light,eightseconds,Light over Peoria&#44 IL that moves slowly&#44 stops in mid-air&#44 hovers&#44 changes colors&#44 shoots in opposite direction and disappears.,10/11/2005
+carthage,tn,us,615-698 2089,other,less than 1 min,1 object with green and red lights,3/21/2003
+mercedies,tx,,(956) 602-6298,cigar,1 hour,ufo chased by fighter jet over Rio Grande Valley. Seen on news,12/12/2011
+burnt hills,ny,us,(518)438-2683,rectangle,2 minutes,Giant rectangular craft (resembling an upside-down aircraft carrier) over highway near Saratoga&#44 NY.,10/23/2013
+pinebergen,ar,us,870-342-3403,light,5 seconds,Round&#44 bright&#44 low flying object silently speeds West of Arkansas town at 11:30pm&#44 10/10/94.,2/18/2001
+milwaukee,wi,us,414-672-2384,,2 min.,Man  on Hwy 43 SW of Milwaukee sees large&#44 bright blue light streak by his car&#44 descend&#44 turn&#44 cross road ahead&#44 strobe. Bizarre&#33,11/2/1999
+oakland,ca,us,510.234.3433,,1 minute,Woman repts.  bright light in NW sky&#44 suddenly approaches her&#44 flies slowly overhead.  Swept wings&#44 2 blurry lights either side.,11/2/1999
+higginsville,mo,us,660-295-9452,triangle,3sec,illuminated triangular craft&#44 flying at high speed from South to North,2/16/2000
+
+concepts: \d, [], ?, \s, ()
+solution:
+
+
+Practice: The Name Game - Level 2
+
+Part 1: Can you match all the names?
+Part 2: Can you put them in First Last order using capturing groups?
+
+Atwood, Margaret
+Le Guin, Ursula K.
+Bradbury, Ray
+Clarke, Arthur C.
+Lem, Stanislaw
+Butler, Octavia E.
+Jemisin, N.K.
+Scott Card, Orson
+Vonnegut, Kurt
+
+concepts: \w, +, \s, *, ?, ()
+solution:
